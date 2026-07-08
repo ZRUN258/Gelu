@@ -29,7 +29,8 @@ __aicore__ inline bool IsAlignedCopySize(int64_t count, int64_t typeSize)
     return (count * typeSize) % COPY_ALIGN_BYTES == 0;
 }
 #define GELU_JOIN3(a, b, c) a##b##c
-} <class T, int USE_X5_PATH, int USE_STD_TANH_PATH>
+} 
+template<class T, int USE_X5_PATH, int USE_STD_TANH_PATH>
 class KernelGelu {
 public:
     __aicore__ inline KernelGelu() {}

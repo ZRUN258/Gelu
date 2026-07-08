@@ -51,7 +51,8 @@ static int64_t GetMinElemsPerCore(int64_t totalLength)
     }
     return totalLength > LARGE_CORE_SPLIT_TOTAL ? LARGE_MIN_ELEMS_PER_CORE : MIN_ELEMS_PER_CORE;
 }
-} optiling {
+} 
+namespace optiling {
 static ge::graphStatus TilingFunc(gert::TilingContext *context)
 {
     auto platform = platform_ascendc::PlatformAscendC(context->GetPlatformInfo());
